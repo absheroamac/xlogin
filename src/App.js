@@ -28,6 +28,8 @@ function App() {
             <input
               placeholder="username"
               onChange={(event) => setUsername(event.target.value)}
+              value={username}
+              required
             ></input>
           </label>
           <br />
@@ -37,6 +39,8 @@ function App() {
               type="password"
               placeholder="password"
               onChange={(event) => setPassword(event.target.value)}
+              value={password}
+              required
             ></input>
           </label>
           <br />
