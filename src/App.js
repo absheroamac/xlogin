@@ -23,27 +23,26 @@ function App() {
       {isLogined && <p>Welcome, user!</p>}
       {!isLogined && (
         <form onSubmit={handleSubmit}>
-          <label>
-            Username:
-            <input
-              placeholder="username"
-              onChange={(event) => setUsername(event.target.value)}
-              value={username}
-              required
-            ></input>
-          </label>
-          <label>
-            Password:
-            <input
-              type="password"
-              placeholder="password"
-              onChange={(event) => setPassword(event.target.value)}
-              value={password}
-              required
-            ></input>
-          </label>
+          <label>Username:</label>
+          <input
+            placeholder="username"
+            onChange={(event) => setUsername(event.target.value)}
+            value={username}
+            required
+          ></input>
+          <br />
 
-          <button>Submit</button>
+          <label>Password:</label>
+          <input
+            type="password"
+            placeholder="password"
+            onChange={(event) => setPassword(event.target.value)}
+            value={password}
+            required
+          ></input>
+          <br />
+
+          <button type="submit">Submit</button>
         </form>
       )}
     </div>
