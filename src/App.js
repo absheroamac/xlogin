@@ -32,7 +32,6 @@ function App() {
               required
             ></input>
           </label>
-          <br />
           <label>
             Password:
             <input
@@ -43,8 +42,8 @@ function App() {
               required
             ></input>
           </label>
-          <br />
-          <button type="submit">Submit</button>
+
+          <button>Submit</button>
         </form>
       )}
     </div>
